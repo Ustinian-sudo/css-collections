@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>保持宽高比</title>
+    <style>
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #f63;
+        /* 16:9 */
+        aspect-ratio: 16/9;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>保持宽高比</title>
-  <style>
-    .container {
-      width: 90%;
-      margin: 0 auto;
-      background-color: #f63;
-      /* 16:9 */
-      aspect-ratio: 16/9;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container"></div>
-</body>
-
+  <body>
+    <div class="container"></div>
+  </body>
 </html>

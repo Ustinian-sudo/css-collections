@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>图片放大遮罩效果</title>
     <style>
-        .image-container {
-            position: relative;
-            display: inline-block;
-            overflow: hidden;
-        }
+      .image-container {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+      }
 
-        .image-container img {
-            display: block;
-            width: 100%;
-            height: auto;
-            transition: transform 0.3s ease;
-        }
+      .image-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
 
-        .image-container::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.3);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
+      .image-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
 
-        .image-container:hover img {
-            transform: scale(1.1);
-        }
+      .image-container:hover img {
+        transform: scale(1.1);
+      }
 
-        .image-container:hover::after {
-            opacity: 1;
-        }
+      .image-container:hover::after {
+        opacity: 1;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="image-container">
-        <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.keqtaiWHpOuZnMFpF_EU2QAAAA?w=274&h=182&c=7&r=0&o=5&pid=1.7"
-            alt="Hover Effect Image">
+      <img
+        src="https://tse2-mm.cn.bing.net/th/id/OIP-C.keqtaiWHpOuZnMFpF_EU2QAAAA?w=274&h=182&c=7&r=0&o=5&pid=1.7"
+        alt="Hover Effect Image"
+      />
     </div>
-</body>
-
+  </body>
 </html>
